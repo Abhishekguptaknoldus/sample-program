@@ -1,0 +1,21 @@
+#[macro_use]
+extern crate text_io;
+fn main (){
+    println!("enetr the term");
+    let n: i32 = read!();
+    for c in 0..n
+        {
+
+            println!("{}",f(c));
+
+        }
+
+}
+fn f(val :i32)->i32
+{
+    if val==0||val==1
+    {return val;}
+    else {
+        return f( val-1)+f(val-2);
+    }
+}

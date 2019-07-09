@@ -1,0 +1,20 @@
+#[macro_use]
+extern crate text_io;
+
+use std::panic::resume_unwind;
+
+fn main (){
+let  mut sum=0;
+
+    println!("enetr the number");
+    let  mut n: i32 = read!();
+    let temp=n;
+    while n>0{
+       let r=n%10;
+        sum=(sum*10)+r;
+        n=n/10;
+    }
+    if temp==sum
+    {println!("pallindrom");}
+  else { println!("not pallindrom"); }
+}

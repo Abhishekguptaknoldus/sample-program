@@ -1,0 +1,15 @@
+fn main() {
+  let s= String:: from("DSFDSFF");
+  take_ownership(s);
+ let ch='p';
+ moves(ch);
+ println!("{}",ch);
+
+}
+fn take_ownership(str:String){
+  println!("{}",str);
+}
+ fn moves(a:char){
+   println!("{}",a);
+ }
+

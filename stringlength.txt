@@ -1,0 +1,11 @@
+fn main() {
+let s=String::from("rust is a programing language");
+  let len=stringlength(&s);
+  println!("{}",len);
+ 
+
+}
+ fn stringlength(s:&String)->usize{
+   s.len()
+ }
+ 
